@@ -1,0 +1,277 @@
+
+      <!-- ======================================================== -->
+      <!-- (4) Non-global standard diags (e.g: sections, zoom etc.) -->
+      <!-- ======================================================== -->
+
+      <!-- 1d files -->
+      <file_group id="1d" output_freq="1d" split_freq="31d" output_level="10" enabled=".TRUE." >
+
+        <!-- Zonal sections -->
+
+        <!-- Section at 75.5 deg N [114E-45.5E] : NORTH CLOSURE (1d files) -->
+
+        <file id="seczo001" name_suffix="_Se75ngridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se75nT" domain_ref="Se75nT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo002" name_suffix="_Se75ngridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se75nU" domain_ref="Se75nU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo003" name_suffix="_Se75ngridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se75nV" domain_ref="Se75nV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 59 deg N : SOUTHERN TIP OF GREENLAND (1d files) -->
+
+        <file id="seczo004" name_suffix="_Se59ngridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se59nT" domain_ref="Se59nT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo005" name_suffix="_Se59ngridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se59nU" domain_ref="Se59nU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo006" name_suffix="_Se59ngridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se59nV" domain_ref="Se59nV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 41 deg N [75W-7W] : ATLANTIC SECTION (1d files) -->
+
+        <file id="seczo007" name_suffix="_Se41ngridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se41nT" domain_ref="Se41nT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo008" name_suffix="_Se41ngridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se41nU" domain_ref="Se41nU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo009" name_suffix="_Se41ngridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se41nV" domain_ref="Se41nV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 26.5 deg N : RAPID (1d files) -->
+
+        <file id="seczo010" name_suffix="_Se26ngridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se26nT" domain_ref="Se26nT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo011" name_suffix="_Se26ngridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se26nU" domain_ref="Se26nU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo012" name_suffix="_Se26ngridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se26nV" domain_ref="Se26nV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 0.0 deg : EQUATOR (1d files) -->
+
+        <file id="seczo013" name_suffix="_Se0ngridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se0nT" domain_ref="Se0nT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo014" name_suffix="_Se0ngridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se0nU" domain_ref="Se0nU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo015" name_suffix="_Se0ngridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se0nV" domain_ref="Se0nV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 34.5 deg S : SAMOC (1d files) -->
+
+        <file id="seczo016" name_suffix="_Se34sgridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se34sT" domain_ref="Se34sT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo017" name_suffix="_Se34sgridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se34sU" domain_ref="Se34sU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo018" name_suffix="_Se34sgridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se34sV" domain_ref="Se34sV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 60.0 deg S (1d files) -->
+
+        <file id="seczo019" name_suffix="_Se60sgridT" description="ocean T grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se60sT" domain_ref="Se60sT" >
+            <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+            <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+            <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+            <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo020" name_suffix="_Se60sgridU" description="ocean U grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se60sU" domain_ref="Se60sU" >
+            <field field_ref="uoce"         name="vozocrtx"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="seczo021" name_suffix="_Se60sgridV" description="ocean V grid variables" type="one_file" enabled=".TRUE.">
+          <field_group id="Se60sV" domain_ref="Se60sV" >
+            <field field_ref="voce"         name="vomecrty"  enabled=".TRUE."/>
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+      </file_group>

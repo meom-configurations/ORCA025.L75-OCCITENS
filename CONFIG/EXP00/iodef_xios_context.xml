@@ -1,0 +1,17 @@
+  <context id="xios">
+
+      <variable_definition>
+	
+     <!-- 
+        We must have buffer_size > jpi*jpj*jpk*8 (with jpi and jpj the subdomain size)
+     -->
+	  <variable id="buffer_size"               type="integer">20000000</variable>
+	  <variable id="buffer_server_factor_size" type="integer">2</variable>
+	  <variable id="info_level"                type="integer">0</variable>
+	  <variable id="using_server"              type="boolean">true</variable>
+	  <variable id="using_oasis"               type="boolean">false</variable>
+	  <variable id="oasis_codes_id"            type="string" >oceanx</variable>
+	
+      </variable_definition>
+               
+  </context>

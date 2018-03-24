@@ -1,0 +1,103 @@
+      <!-- ============================= -->
+      <!-- (1) Global inter-member diags -->
+      <!-- ============================= -->
+
+      <!-- 1h files -->
+      <file_group id="inter1h" output_freq="1h" split_freq="1d" output_level="10" enabled=".FALSE." > 
+        <file id="ifile001" name_suffix="_igridT" description="ocean T grid variables" >
+           <field field_ref="msst"         name="msst"      enabled=".TRUE."/>
+           <field field_ref="stdsst"       name="stdsst"    enabled=".TRUE."/>
+           <field field_ref="mmxl010"      name="mmxl010"   enabled=".TRUE."/>
+           <field field_ref="stdmxl010"    name="stdmxl010" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile002" name_suffix="_igridU" description="ocean U grid variables" >
+           <field field_ref="msuoce"       name="msuoce"    enabled=".TRUE."/>
+           <field field_ref="stdsuoce"     name="stdsuoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile003" name_suffix="_igridV" description="ocean V grid variables" >
+           <field field_ref="msvoce"       name="msvoce"    enabled=".TRUE."/>
+           <field field_ref="stdsvoce"     name="stdsvoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+      </file_group>
+
+      <!-- 1d files -->
+      <file_group id="inter1d" output_freq="1d" split_freq="31d" output_level="10" enabled=".TRUE." > 
+        <file id="ifile004" name_suffix="_igridT" description="ocean T grid variables" >
+           <field field_ref="msst"         name="msst"      enabled=".TRUE."/>
+           <field field_ref="stdsst"       name="stdsst"    enabled=".TRUE."/>
+           <field field_ref="mmxl010"      name="mmxl010"   enabled=".TRUE."/>
+           <field field_ref="stdmxl010"    name="stdmxl010" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile005" name_suffix="_igridU" description="ocean U grid variables" >
+           <field field_ref="msuoce"       name="msuoce"    enabled=".TRUE."/>
+           <field field_ref="stdsuoce"     name="stdsuoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile006" name_suffix="_igridV" description="ocean V grid variables" >
+           <field field_ref="msvoce"       name="msvoce"    enabled=".TRUE."/>
+           <field field_ref="stdsvoce"     name="stdsvoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+      </file_group>
+
+      <!-- 1mo files -->
+      <file_group id="inter1mo" output_freq="1mo" split_freq="1mo" output_level="10" enabled=".TRUE." > 
+        <file id="ifile007" name_suffix="_igridT" description="ocean T grid variables" >
+           <field field_ref="msst"         name="msst"      enabled=".TRUE."/>
+           <field field_ref="stdsst"       name="stdsst"    enabled=".TRUE."/>
+           <field field_ref="mmxl010"      name="mmxl010"   enabled=".TRUE."/>
+           <field field_ref="stdmxl010"    name="stdmxl010" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile008" name_suffix="_igridU" description="ocean U grid variables" >
+           <field field_ref="msuoce"       name="msuoce"    enabled=".TRUE."/>
+           <field field_ref="stdsuoce"     name="stdsuoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="ifile009" name_suffix="_igridV" description="ocean V grid variables" >
+           <field field_ref="msvoce"       name="msvoce"    enabled=".TRUE."/>
+           <field field_ref="stdsvoce"     name="stdsvoce"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+      </file_group>
+

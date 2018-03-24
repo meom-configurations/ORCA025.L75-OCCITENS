@@ -1,0 +1,63 @@
+ <context id="<NEMO.MEMBER>" time_origin="1958-01-01 00:00:00" >
+    
+    <!-- $id$ -->
+    
+    <!-- 
+============================================================================================================
+=                                  definition of all existing variables                                    =
+=                                            DO NOT CHANGE                                                 =
+============================================================================================================
+    -->
+    <field_definition src="./field_def.xml"/>
+    <!-- 
+============================================================================================================
+=                                           output files definition                                        =
+=                                            Define your own files                                         =
+=                                         put the variables you want...                                    =
+============================================================================================================
+    -->
+    <file_definition type="multiple_file" name="<OUTDIR>/@expname@_@freq@" sync_freq="10d" min_digits="4">
+
+      <!-- INCLUDE 01-ifile.xml -->
+
+      <!-- INCLUDE 02-iseczo.xml -->
+
+      <!-- INCLUDE 03-isecme.xml -->
+
+      <!-- INCLUDE 04-file.xml -->
+
+      <!-- INCLUDE 05-seczo.xml -->
+
+      <!-- INCLUDE 06-secme.xml -->
+
+    </file_definition>
+    
+    <!-- 
+============================================================================================================
+= grid definition = = DO NOT CHANGE =
+============================================================================================================
+    -->
+    
+   <axis_definition>  
+      <axis id="deptht" long_name="Vertical T levels" unit="m" positive="down" />
+      <axis id="depthu" long_name="Vertical U levels" unit="m" positive="down" />
+      <axis id="depthv" long_name="Vertical V levels" unit="m" positive="down" />
+      <axis id="depthw" long_name="Vertical W levels" unit="m" positive="down" />
+      <axis id="nfloat" long_name="Float number"      unit="-"  />
+      <axis id="icbcla" long_name="Iceberg class"     unit="-"  />
+   </axis_definition> 
+    
+   <domain_definition src="./domain_def.xml"/>
+   
+   <grid_definition>    
+     <grid id="grid_T_2D" domain_ref="grid_T"/>
+     <grid id="grid_T_3D" domain_ref="grid_T" axis_ref="deptht"/>
+     <grid id="grid_U_2D" domain_ref="grid_U"/>
+     <grid id="grid_U_3D" domain_ref="grid_U" axis_ref="depthu"/>
+     <grid id="grid_V_2D" domain_ref="grid_V"/>
+     <grid id="grid_V_3D" domain_ref="grid_V" axis_ref="depthv"/>
+     <grid id="grid_W_2D" domain_ref="grid_W"/>
+     <grid id="grid_W_3D" domain_ref="grid_W" axis_ref="depthw"/>
+    </grid_definition> 
+
+ </context>

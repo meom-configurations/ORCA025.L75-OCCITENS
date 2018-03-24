@@ -1,0 +1,38 @@
+
+      <!-- ============================================================ -->
+      <!-- (2) Non-global inter-member diags (e.g: sections, zoom etc.) -->
+      <!-- ============================================================ -->
+
+      <!-- 1d files -->
+      <file_group id="inter1d" output_freq="1d" split_freq="31d" output_level="10" enabled=".TRUE." >
+
+        <!-- Zonal sections -->
+
+        <!-- Section at 26.5 deg N : RAPID (1d files) -->
+        <file id="iseczo001" name_suffix="_Se26nigridV" description="ocean V grid variables" type="one_file" enabled=".TRUE." >
+          <field_group id="Se26niV" domain_ref="Se26nV" >
+            <field field_ref="vtflx_tot_rapid"  />
+            <field field_ref="vtflx_lam_rapid"  />
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <!-- Section at 34.5 deg S : SAMOC (1d files) -->
+        <file id="iseczo002" name_suffix="_Se34sigridV" description="ocean V grid variables" type="one_file" enabled=".TRUE." >
+         <field_group id="Se34siV" domain_ref="Se34sV" >
+            <field field_ref="vtflx_tot_samoc"  />
+            <field field_ref="vtflx_lam_samoc"  />
+          </field_group>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+
+      </file_group>

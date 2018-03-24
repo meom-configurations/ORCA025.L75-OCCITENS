@@ -1,0 +1,280 @@
+
+      <!-- ========================= -->
+      <!-- (3) Global standard diags -->
+      <!-- ========================= -->
+
+      <!-- 1h files -->
+      <file_group id="1h" output_freq="1h"  split_freq="1d"  output_level="10" enabled=".FALSE.">
+        <file id="file001" name_suffix="_gridT" description="ocean T grid variables" >
+           <field field_ref="sst"          name="sosstsst"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file002" name_suffix="_gridU" description="ocean U grid variables" >
+           <field field_ref="suoce"         name="suoce"     enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file003" name_suffix="_gridV" description="ocean V grid variables" >
+           <field field_ref="svoce"         name="svoce"     enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1h       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+
+        </file>
+      </file_group>
+
+      <!-- 1d files -->
+      <file_group id="1d" output_freq="1d"  split_freq="31d"  output_level="10" enabled=".TRUE."> 
+        <file id="file004" name_suffix="_gridT" description="ocean T grid variables" >
+           <field field_ref="sst"           name="sst"     enabled=".TRUE."/>
+           <field field_ref="sss"           name="sss"     enabled=".TRUE."/>
+           <field field_ref="ssh"           name="ssh"     enabled=".TRUE."/>
+           <field field_ref="t100"          name="temp100" enabled=".TRUE."/>
+           <field field_ref="s100"          name="sal100"  enabled=".TRUE."/>
+           <field field_ref="botpres"       name="botpres" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file005" name_suffix="_flxT" description="ocean T grid variables" >
+           <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+           <field field_ref="qt"           name="sohefldo"  enabled=".TRUE."/>
+           <field field_ref="erp"          name="sowafld"   enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file006" name_suffix="_gridU" description="ocean U grid variables" >
+           <field field_ref="suoce"       name="suoce"     enabled=".TRUE."/>
+           <field field_ref="u100"        name="u100"      enabled=".TRUE."/>
+           <field field_ref="ubar"        name="ubar"      enabled=".TRUE."/>
+           <field field_ref="utau"        name="sozotaux"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file007" name_suffix="_gridV" description="ocean V grid variables" >
+           <field field_ref="svoce"        name="svoce"    enabled=".TRUE."/>
+           <field field_ref="v100"         name="v100"     enabled=".TRUE."/>
+           <field field_ref="vbar"         name="vbar"     enabled=".TRUE."/>
+           <field field_ref="vtau"         name="sometauy" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file008" name_suffix="_gridW" description="ocean W grid variables" >
+          <field field_ref="woce"         name="vovecrtz"  enabled=".FALSE."/>
+          <field field_ref="avt"          name="votkeavt"  enabled=".FALSE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file009" name_suffix="_icemod" description="ocean Ice variables" >
+          <field field_ref="ice_cover"    name="ileadfra"  enabled=".TRUE."/>
+          <field field_ref="icethic_cea"  name="iicethic"  enabled=".TRUE."/>
+          <field field_ref="ioceflxb"     name="ioceflxb"  enabled=".TRUE."/>
+          <field field_ref="uice_ipa"     name="iicevelu"  enabled=".TRUE."/>
+          <field field_ref="vice_ipa"     name="iicevelv"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+        <file id="file010" name_suffix="_trdmld" description="ocean T grid variables" >
+
+          <!-- Instantaneous method -->
+          <field field_ref="ztml"         name="ztml"         enabled=".FALSE." />                                
+          <field field_ref="ztmltrd_tot"  name="ztmltrd_tot"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_res"  name="ztmltrd_res"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_xad"  name="ztmltrd_xad"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_yad"  name="ztmltrd_yad"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_zad"  name="ztmltrd_zad"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_ldf"  name="ztmltrd_ldf"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_for"  name="ztmltrd_for"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_zdf"  name="ztmltrd_zdf"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_bbc"  name="ztmltrd_bbc"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_bbl"  name="ztmltrd_bbl"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_dmp"  name="ztmltrd_dmp"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_npc"  name="ztmltrd_npc"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_atf"  name="ztmltrd_atf"  enabled=".FALSE." />
+          <field field_ref="ztmltrd_xyad" name="ztmltrd_xyad" enabled=".FALSE." />
+          <field field_ref="ztmltrd_lzdf" name="ztmltrd_lzdf" enabled=".FALSE." />   
+
+          <field field_ref="zsml"         name="zsml"         enabled=".FALSE." />
+          <field field_ref="zsmltrd_tot"  name="zsmltrd_tot"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_res"  name="zsmltrd_res"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_xad"  name="zsmltrd_xad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_yad"  name="zsmltrd_yad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_zad"  name="zsmltrd_zad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_ldf"  name="zsmltrd_ldf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_for"  name="zsmltrd_for"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_zdf"  name="zsmltrd_zdf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_bbc"  name="zsmltrd_bbc"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_bbl"  name="zsmltrd_bbl"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_dmp"  name="zsmltrd_dmp"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_npc"  name="zsmltrd_npc"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_atf"  name="zsmltrd_atf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd_xyad" name="zsmltrd_xyad" enabled=".FALSE." />
+          <field field_ref="zsmltrd_lzdf" name="zsmltrd_lzdf" enabled=".FALSE." />
+
+          <!-- Average method -->
+          <field field_ref="ztml_sum"      name="ztml_sum"      enabled=".TRUE."  />                                
+          <field field_ref="ztmltrd2_tot"  name="ztmltrd2_tot"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_res"  name="ztmltrd2_res"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_xad"  name="ztmltrd2_xad"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_yad"  name="ztmltrd2_yad"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_zad"  name="ztmltrd2_zad"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_ldf"  name="ztmltrd2_ldf"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_for"  name="ztmltrd2_for"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_zdf"  name="ztmltrd2_zdf"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_bbc"  name="ztmltrd2_bbc"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_bbl"  name="ztmltrd2_bbl"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_dmp"  name="ztmltrd2_dmp"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_npc"  name="ztmltrd2_npc"  enabled=".FALSE." />
+          <field field_ref="ztmltrd2_atf"  name="ztmltrd2_atf"  enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_xyad" name="ztmltrd2_xyad" enabled=".TRUE."  />
+          <field field_ref="ztmltrd2_lzdf" name="ztmltrd2_lzdf" enabled=".TRUE."  />   
+
+          <field field_ref="zsml_sum"      name="zsml_sum"      enabled=".FALSE." />
+          <field field_ref="zsmltrd2_tot"  name="zsmltrd2_tot"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_res"  name="zsmltrd2_res"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_xad"  name="zsmltrd2_xad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_yad"  name="zsmltrd2_yad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_zad"  name="zsmltrd2_zad"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_ldf"  name="zsmltrd2_ldf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_for"  name="zsmltrd2_for"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_zdf"  name="zsmltrd2_zdf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_bbc"  name="zsmltrd2_bbc"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_bbl"  name="zsmltrd2_bbl"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_dmp"  name="zsmltrd2_dmp"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_npc"  name="zsmltrd2_npc"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_atf"  name="zsmltrd2_atf"  enabled=".FALSE." />
+          <field field_ref="zsmltrd2_xyad" name="zsmltrd2_xyad" enabled=".FALSE." />
+          <field field_ref="zsmltrd2_lzdf" name="zsmltrd2_lzdf" enabled=".FALSE." />
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1d       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+
+      </file_group>
+
+      <!-- 1mo files -->
+      <file_group id="1m" output_freq="1mo" split_freq="1mo" output_level="10" enabled=".TRUE."> <!-- real monthly files -->
+        <file id="file011" name_suffix="_gridT" description="ocean T grid variables" >
+           <field field_ref="toce"         name="votemper"  enabled=".TRUE."/>
+           <field field_ref="soce"         name="vosaline"  enabled=".TRUE."/>
+           <field field_ref="ssh"          name="sossheig"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo       </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file012" name_suffix="_gridU" description="ocean U grid variables" >
+           <field field_ref="uoce"        name="vozocrtx"  enabled=".TRUE."/>
+           <field field_ref="utau"        name="sozotaux"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file013" name_suffix="_gridV" description="ocean V grid variables" >
+           <field field_ref="voce"         name="vomecrty" enabled=".TRUE."/>
+           <field field_ref="vtau"         name="sometauy" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file014" name_suffix="_gridW" description="ocean W grid variables" >
+           <field field_ref="woce"         name="vovecrtz" enabled=".TRUE."/>
+           <field field_ref="avt"          name="votkeavt" enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file015" name_suffix="_icemod" description="ocean Ice variables" >
+           <field field_ref="ice_cover"    name="ileadfra"  enabled=".TRUE."/>
+           <field field_ref="snowthic_cea" name="isnowthi"  enabled=".TRUE."/>
+           <field field_ref="icethic_cea"  name="iicethic"  enabled=".TRUE."/>
+           <field field_ref="iceprod_cea"  name="iiceprod"  enabled=".TRUE."/>
+           <field field_ref="ist_ipa"      name="iicetemp"  enabled=".TRUE."/>
+           <field field_ref="ioceflxb"     name="ioceflxb"  enabled=".TRUE."/>
+           <field field_ref="uice_ipa"     name="iicevelu"  enabled=".TRUE."/>
+           <field field_ref="vice_ipa"     name="iicevelv"  enabled=".TRUE."/>
+           <field field_ref="utau_ice"     name="iicestru"  enabled=".TRUE."/>
+           <field field_ref="vtau_ice"     name="iicestrv"  enabled=".TRUE."/>
+           <field field_ref="qsr_io_cea"   name="iicesflx"  enabled=".TRUE."/>
+           <field field_ref="qns_io_cea"   name="iicenflx"  enabled=".TRUE."/>
+           <field field_ref="snowpre"      name="isnowpre"  enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+        <file id="file016" name_suffix="_flxT" description="ocean T grid variables" >
+           <field field_ref="mldr10_1"     name="somxl010"  enabled=".TRUE."/>
+           <field field_ref="qt"           name="sohefldo"  enabled=".TRUE."/>
+           <field field_ref="qsr"          name="soshfldo"  enabled=".TRUE."/>
+           <field field_ref="qns_oce"      name="qns_oce"   enabled=".TRUE."/>
+           <field field_ref="qns"          name="qns"       enabled=".TRUE."/>
+           <field field_ref="qla_oce"      name="solhflup"  enabled=".TRUE."/>
+           <field field_ref="qlw_oce"      name="solwfldo"  enabled=".TRUE."/>
+           <field field_ref="qsb_oce"      name="sosbhfup"  enabled=".TRUE."/>
+           <field field_ref="empmr"        name="sowaflup"  enabled=".TRUE."/>
+           <field field_ref="saltflx"      name="sosfldow"  enabled=".TRUE."/>
+           <field field_ref="erp"          name="sowafld"   enabled=".TRUE."/>
+           <field field_ref="wspd"         name="sowinsp"   enabled=".TRUE."/>
+           <field field_ref="runoffs"      name="sornf"     enabled=".TRUE."/>
+
+           <variable name="start_date"       type="int"><NDATE0>    </variable>
+           <variable name="output_frequency" type="string">1mo      </variable>
+           <variable name="CONFIG"           type="string"><CONFIG> </variable>
+           <variable name="CASE"             type="string"><CASE>   </variable>
+        </file>
+      </file_group>
+
+      <file_group id="2m" output_freq="2mo" output_level="10" enabled=".TRUE."/> <!-- real 2m files -->
+      <file_group id="3m" output_freq="3mo" output_level="10" enabled=".TRUE."/> <!-- real 3m files -->
+      <file_group id="4m" output_freq="4mo" output_level="10" enabled=".TRUE."/> <!-- real 4m files -->
+      <file_group id="6m" output_freq="6mo" output_level="10" enabled=".TRUE."/> <!-- real 6m files -->
+      <file_group id="1y"  output_freq="1y" output_level="10" enabled=".TRUE."/> <!-- real yearly files -->
+      <file_group id="2y"  output_freq="2y" output_level="10" enabled=".TRUE."/> <!-- real 2y files -->
+      <file_group id="5y"  output_freq="5y" output_level="10" enabled=".TRUE."/> <!-- real 5y files -->
+      <file_group id="10y" output_freq="10y" output_level="10" enabled=".TRUE."/> <!-- real 10y files -->
+
